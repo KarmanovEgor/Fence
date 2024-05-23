@@ -1,6 +1,7 @@
 import FenceDetails from "../FanceDetails/FanceDetails";
 import KalitkaDetails from "../FanceDetails/KalitkaDetails";
 import VorotaDetails from "../FanceDetails/VorotaDetails";
+import Slider from "../Slider/Slider";
 import { advanProflist } from "../constants/constAdvantage";
 import { proflist } from "../constants/constZabors";
 import "./Proflist.css";
@@ -55,6 +56,7 @@ export default function Proflist({ openPopup }) {
 </div>
 <KalitkaDetails kalitkaData={kalitkaData}/>
 <VorotaDetails vorotaData={vorotaData} />
+<Slider />
       </div>
     </section>
   );
