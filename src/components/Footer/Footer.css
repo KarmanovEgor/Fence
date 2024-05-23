@@ -1,0 +1,13 @@
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    padding: 7px 60px 7px 60px;
+    box-sizing: border-box;
+    background-color: var(--backdark-color);
+}
+.footer__list {
+    color: var(--text-color);
+}

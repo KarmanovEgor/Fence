@@ -1,0 +1,112 @@
+.fence__container {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.fence__block-describe {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px
+}
+.fence__advantage {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 450px));
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+.fence__grid_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+.fence__imgs {
+    max-width: 50px;
+    width: 100%;
+}
+.fence__img {
+    max-width: 500px;
+    width: 100%;
+}
+.fence__complect {
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 40px
+
+}
+.fence__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--backlight-color);
+}
+.table__title  {
+    padding: 10px;
+    background: var(--backlight-color);
+    border: 1px solid var(--fon-color);
+}
+.table__title th {
+    padding: 10px;
+    background: var(--backlight-color);
+    border: 1px solid var(--fon-color);
+}
+.table-bordered td {
+    border-right: 1px solid var(--backlight-color);
+    vertical-align: middle;
+    border-bottom: 1px solid var(--backlight-color);
+    padding: 25px;
+}
+.fence__complect-plus {
+    border: 1px solid var(--fon-color);
+}
+.fence_complect-plus_title {
+    background-color: var(--fon-color);
+    color: var(--grey-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: 0;
+}
+
+.fence_complect-plus_list {
+    list-style: decimal;
+}
+
+.fence__complect-btn {
+align-self: center;
+        background-color: var(--text-color);
+        cursor: pointer;
+        border: none;
+        padding: 17px 57px 17px 57px;
+        border-radius: 10px;
+        transition: transform 0.3s, filter 0.3s ease-in-out;
+        font-size: 24px;
+box-shadow: 0px 5px 5px var(--fon-color);
+max-width: 600px;
+
+
+}
+.fence__complect-btn:hover{
+    transform: scale(1.1);
+    filter: brightness(120%)
+  }
+  .fence__variants {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .fence__variants-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    width: 100%;
+  
+  }
+  .fence__variants-img {
+    height: 300px;
+
+  }
