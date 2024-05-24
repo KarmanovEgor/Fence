@@ -8,50 +8,51 @@
 
 .contacts__list {
     display: flex;
-    max-width: 500px;
-    width: 100%;
     align-self: flex-start;
     flex-direction: column;
     font-size: 24px;
     /* padding-top: 20px; */
     gap: 20px;
-   
+
 }
+
 .contacts__links {
-  
+
     text-decoration: none;
     color: var(--fon-color);
     transition: transform 0.3s ease-in-out;
 }
+
 .contacts__links:hover {
     text-decoration: none;
     color: var(--text-color);
     transform: scale(1.1);
 }
+
 .contacts__img {
     max-width: 300px;
 }
+
 .contacts__map {
     max-width: 600px;
     width: 100%;
     height: 400px;
     box-shadow: 1px 1px 10px var(--text-color);
 }
-@media (max-width: 871px) { 
-    .contacts__list { 
-        flex-direction: row;
-    }
-    .contacts__container {
-justify-content: center;
 
+@media (max-width: 1000px) {
+
+    .contacts__container {
+        justify-content: center;
+        align-items: center;
     }
-}
-@media (max-width: 630px) {
-     .contacts__list {
-flex-direction: column;
+
+    .contacts__list {
+        justify-content: center;
+        align-items: center;
     }
-    .youtube__block-video {
-        max-width: 520px;
-        width: 100%;
+
+    .contacts__links {
+        text-align: center;
     }
 }

@@ -1,6 +1,8 @@
 .fence__container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 60px;
 }
 .fence__block-describe {
@@ -15,6 +17,7 @@
     justify-content: center;
     align-items: center;
     gap: 20px;
+    padding: 0;
 
 }
 .fence__grid_item {
@@ -30,19 +33,27 @@
 .fence__img {
     max-width: 500px;
     width: 100%;
+    box-shadow: 3px 3px 5px var(--fon-color);
 }
 .fence__complect {
 display: flex;
 flex-direction: column;
 justify-content: center;
-gap: 40px
+gap: 40px;
+width: 100%;
 
+}
+.fence__montage-img {
+    max-width: 640px;
+    width: 100%;
 }
 .fence__table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid var(--backlight-color);
+  
 }
+
 .table__title  {
     padding: 10px;
     background: var(--backlight-color);
@@ -108,5 +119,44 @@ max-width: 600px;
   }
   .fence__variants-img {
     height: 300px;
+    box-shadow: 3px 3px 5px var(--fon-color);
 
   }
+  @media (max-width: 1109px) {
+    .fence__variants {
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+}
+  @media (max-width: 936px) {
+    .fence__block-describe {
+        flex-direction: column;
+        align-items: center;
+    }
+    .fence__subtitle {
+        margin-top: 0;
+    }
+    .fence__text {
+        margin-bottom: 0;
+    }
+  }
+  @media (max-width: 768px) {
+    .fence__table {
+        padding: 0 18px;
+        font-size: 10px;
+    }
+    th, td {
+        padding: 4px !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .fence__table {
+        font-size: 8px;
+    }
+    .fence__advantage {
+        grid-template-columns: repeat(1, minmax(0, 450px));
+    }
+  }
+

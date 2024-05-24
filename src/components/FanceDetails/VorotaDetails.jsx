@@ -20,13 +20,13 @@ const VorotaDetails = ({ vorotaData }) => {
     <React.Fragment key={index}>
       <tr>
         <td rowSpan={2}>
-          <ul>
+          <ul className="table__list">
             {row.components.map((component, componentIndex) => (
               <li key={componentIndex}>{component}</li>
             ))}
           </ul>
         </td>
-        <td rowSpan={2}>{row.height}</td>
+        <td rowSpan={2}  style={{ minWidth: '92px', textAlign: "center"  }}>{row.height}</td>
         <td rowSpan={2} style={{ textAlign: "center" }}>{row.frame}</td>
         <td rowSpan={2} style={{ textAlign: "center" }}>
           <strong>{row.price}</strong>

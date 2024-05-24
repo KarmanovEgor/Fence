@@ -35,7 +35,7 @@ export default function Contacts() {
           <iframe
             title="Местоположение компании Забор у дома"
             src="https://yandex.ru/map-widget/v1/?um=constructor%3A91b0b6066878a619b92ec2b3bc9bb1d2670b47f9be599daa77aeb9ee8b889b9e&amp;source=constructor"
-            width="600"
+            width="100%"
             height="400"
             frameBorder="0"
             sandbox="allow-scripts allow-same-origin"

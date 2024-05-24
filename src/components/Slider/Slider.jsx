@@ -21,17 +21,18 @@ export default function Slider() {
   };
 
   return (
-    <div className="slider">
-      <div className="slider__container page__size">
+    <div className="slider ">
           <h3 className="slider__title title__size">
           Фото  наших работ с объектов
           </h3>
+      <div className="slider__container page__size">
+      
 
         <div className="slider__photo">
           <img
             src={slideImagesProf[currentPhotoIndex].image}
             alt={slideImagesProf[currentPhotoIndex].alt}
-            className="slider__photo-left"
+            className="slider__photo-left slider__photo-size"
           />
           <img
             src={
@@ -42,7 +43,7 @@ export default function Slider() {
               slideImagesProf[(currentPhotoIndex + 1) % slideImagesProf.length]
                 .alt
             }
-            className="slider__photo-center"
+            className="slider__photo-center slider__photo-size"
           />
              <img
             src={
@@ -53,7 +54,7 @@ export default function Slider() {
               slideImagesProf[(currentPhotoIndex + 2) % slideImagesProf.length]
                 .alt
             }
-            className="slider__photo-right"
+            className="slider__photo-right slider__photo-size"
           />
         </div>
         <div className="slider__btns">

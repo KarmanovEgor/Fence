@@ -17,5 +17,12 @@ align-items: flex-start;
 justify-content: center;
 align-items: center;
 gap: 20px;
+
+    }
+}
+@media (max-width: 630px) {
+    .youtube__block-video {
+        max-width: 520px;
+        width: 100%;
     }
 }
