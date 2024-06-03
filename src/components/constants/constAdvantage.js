@@ -4,7 +4,7 @@ import iconAdvantage3 from '../../img/ic_availability.png';
 import iconAdvantage4 from '../../img/ic_contract.png';
 import iconAdvantage5 from '../../img/ic_team.png';
 import iconAdvantage6 from '../../img/ic_location.png';
-import plus from '../../img/plus.png'
+
 
 
 const advan = [
@@ -48,23 +48,6 @@ const clients = [
   },
 ];
 
-const advanProflist = [
-  {
-    image: plus,
-    text: "Плюсы: Большой ассортимент расцветок, толщины, текстуры",
-},
-{
-    image: plus,
-    text: "Быстрый монтаж и возможность проводить технический ремонт",
-},
-{
-    image: plus,
-    text: "Доступная цена и срок эксплуатации более 25 лет",
-},
-{
-    image: plus,
-    text: "Эстетичность, высокие эксплуатационные свойства",
-},
-]
 
-export {advan, clients, advanProflist} ;
+
+export {advan, clients } ;

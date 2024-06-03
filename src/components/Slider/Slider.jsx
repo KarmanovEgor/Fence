@@ -1,59 +1,42 @@
-import { slideImagesProf } from "../constants/constCarousel";
 import "./Slider.css";
 
 import React, { useState } from "react";
 
-
-export default function Slider() {
+export default function Slider({slideImages}) {
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
   const handleNextPhoto = () => {
-    setCurrentPhotoIndex(
-      (prevIndex) => (prevIndex + 1) % slideImagesProf.length
-    );
+    setCurrentPhotoIndex((prevIndex) => (prevIndex + 1) % slideImages.length);
   };
 
   const handlePrevPhoto = () => {
     setCurrentPhotoIndex(
-      (prevIndex) =>
-        (prevIndex - 1 + slideImagesProf.length) % slideImagesProf.length
+      (prevIndex) => (prevIndex - 1 + slideImages.length) % slideImages.length
     );
   };
 
   return (
     <div className="slider ">
-          <h3 className="slider__title title__size">
-          Фото  наших работ с объектов
-          </h3>
+      <h3 className="slider__title title__size">Фото наших работ с объектов</h3>
       <div className="slider__container page__size">
-      
-
         <div className="slider__photo">
           <img
-            src={slideImagesProf[currentPhotoIndex].image}
-            alt={slideImagesProf[currentPhotoIndex].alt}
+            src={slideImages[currentPhotoIndex].image}
+            alt={slideImages[currentPhotoIndex].alt}
             className="slider__photo-left slider__photo-size"
           />
           <img
             src={
-              slideImagesProf[(currentPhotoIndex + 1) % slideImagesProf.length]
-                .image
+              slideImages[(currentPhotoIndex + 1) % slideImages.length].image
             }
-            alt={
-              slideImagesProf[(currentPhotoIndex + 1) % slideImagesProf.length]
-                .alt
-            }
+            alt={slideImages[(currentPhotoIndex + 1) % slideImages.length].alt}
             className="slider__photo-center slider__photo-size"
           />
-             <img
+          <img
             src={
-              slideImagesProf[(currentPhotoIndex + 2) % slideImagesProf.length]
-                .image
+              slideImages[(currentPhotoIndex + 2) % slideImages.length].image
             }
-            alt={
-              slideImagesProf[(currentPhotoIndex + 2) % slideImagesProf.length]
-                .alt
-            }
+            alt={slideImages[(currentPhotoIndex + 2) % slideImages.length].alt}
             className="slider__photo-right slider__photo-size"
           />
         </div>

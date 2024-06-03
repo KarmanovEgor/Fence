@@ -1,6 +1,11 @@
 import React from 'react';
 
 const FenceDetails = ({ fenceData, openPopup }) => {
+  if (!fenceData || !fenceData.rows || fenceData.rows.length === 0) {
+    return null; // Возвращаем null, если данные не доступны
+  }
+
+  const hasAdditionalOptions = fenceData.additionalOptions && fenceData.additionalOptions.length > 0;
   return (
     <div className="fence__complect">
       <table className="fence__table table-bordered">
@@ -45,14 +50,16 @@ const FenceDetails = ({ fenceData, openPopup }) => {
           </tr>
         </tfoot>
       </table>
-      <div className="fence__complect-plus">
-        <h3 className="fence_complect-plus_title">Дополнительно под заказ:</h3>
-        <ul className="fence_complect-plus_list">
-          {fenceData.additionalOptions.map((option, index) => (
-            <li key={index}>{option}</li>
-          ))}
-        </ul>
-      </div>
+      {hasAdditionalOptions && (
+        <div className="fence__complect-plus">
+          <h3 className="fence_complect-plus_title">Дополнительно под заказ:</h3>
+          <ul className="fence_complect-plus_list">
+            {fenceData.additionalOptions.map((option, index) => (
+              <li key={index}>{option}</li>
+            ))}
+          </ul>
+        </div>
+      )}
       <button
         className="fence__complect-btn"
         type="button"

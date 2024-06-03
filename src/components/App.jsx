@@ -10,7 +10,8 @@ import { Route, Routes } from "react-router-dom";
 import Popup from "./Popup/Popup";
 import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
-import Proflist from "./Proflist/Proflist";
+import Proflist from "./Fence/Proflist";
+import Rabitsa from "./Fence/Rabitas";
 
 function App() {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
@@ -70,6 +71,20 @@ function App() {
             </>
           }
         />
+            <Route
+          path="/grid"
+          element={
+            <>
+              <Header openPopup={openPopup} />
+              <main className="content">
+                <Rabitsa openPopup={openPopup} />
+              </main>
+              <Footer />
+              <Popup isOpen={isOpenPopup} onClose={closePopup} />
+            </>
+          }
+        />
+        
       </Routes>
     </div>
   );
