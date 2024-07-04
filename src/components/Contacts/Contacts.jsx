@@ -1,12 +1,12 @@
 
 import "./Contacts.css";
 import { Link } from "react-router-dom";
-import buildImg from '../../img/build.jpeg'
+import buildImg from '../../img/vmstr.jpeg'
 
 export default function Contacts() {
   const phoneNumber = "+79130278176";
-  const email = " olga_biznessibiri@mail.ru";
-
+  const phoneNumber2 = "+79628196340";
+  const email = "Zaborydoma22@mail.ru";
   return (
     <section className="contacts page__size">
       <h2 className="contacts__title title__size">Наши контакты</h2>
@@ -15,6 +15,9 @@ export default function Contacts() {
           <img className="contacts__img" title="строим заборы" alt="строим заборы" src={buildImg}></img>
           <Link to={`tel:${phoneNumber}`} className="contacts__links">
             {phoneNumber}
+          </Link>
+          <Link to={`tel:${phoneNumber2}`} className="contacts__links">
+            {phoneNumber2}
           </Link>
           <Link to={`https://t.me/${phoneNumber}?text=Здравствуйте,пишу с вашего сайта Zabor u doma`} className="contacts__links">
             Telegram

@@ -12,6 +12,11 @@ import Contacts from "./Contacts/Contacts";
 import Footer from "./Footer/Footer";
 import Proflist from "./Fence/Proflist";
 import Rabitsa from "./Fence/Rabitas";
+import Evro from "./Fence/Evro";
+import Wood from "./Fence/Wood";
+import Setka3d from "./Fence/Setka3d";
+import Base from "./Fence/Karkas";
+
 
 function App() {
   const [isOpenPopup, setIsOpenPopup] = useState(false);
@@ -78,6 +83,58 @@ function App() {
               <Header openPopup={openPopup} />
               <main className="content">
                 <Rabitsa openPopup={openPopup} />
+              </main>
+              <Footer />
+              <Popup isOpen={isOpenPopup} onClose={closePopup} />
+            </>
+          }
+        />
+                 <Route
+          path="/evroiron"
+          element={
+            <>
+              <Header openPopup={openPopup} />
+              <main className="content">
+                <Evro openPopup={openPopup} />
+              </main>
+              <Footer />
+              <Popup isOpen={isOpenPopup} onClose={closePopup} />
+            </>
+          }
+        />
+        <Route
+          path="/wood"
+          element={
+            <>
+              <Header openPopup={openPopup} />
+              <main className="content">
+                <Wood openPopup={openPopup} />
+              </main>
+              <Footer />
+              <Popup isOpen={isOpenPopup} onClose={closePopup} />
+            </>
+          }
+        />
+             <Route
+          path="/3d"
+          element={
+            <>
+              <Header openPopup={openPopup} />
+              <main className="content">
+                <Setka3d openPopup={openPopup} />
+              </main>
+              <Footer />
+              <Popup isOpen={isOpenPopup} onClose={closePopup} />
+            </>
+          }
+        />
+                <Route
+          path="/Base"
+          element={
+            <>
+              <Header openPopup={openPopup} />
+              <main className="content">
+                <Base openPopup={openPopup} />
               </main>
               <Footer />
               <Popup isOpen={isOpenPopup} onClose={closePopup} />

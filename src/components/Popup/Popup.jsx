@@ -4,7 +4,7 @@ import { FaPhone, FaTelegram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 
 export default function Popup({ isOpen, onClose }) {
   const phoneNumber = "+79130278176";
-  const email = "olga_biznessibiri@mail.ru";
+  const email = "Zaborydoma22@mail.ru";
   const handlePopupClose = () => {
     onClose();
   };

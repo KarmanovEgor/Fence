@@ -5,12 +5,21 @@
     align-items: center;
     gap: 60px;
 }
+
 .fence__block-describe {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px
 }
+.fence__plus {
+    width: 100%;
+}
+
+.fence__text-title {
+    margin: 0;
+}
+
 .fence__advantage {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 450px));
@@ -18,61 +27,85 @@
     align-items: center;
     gap: 20px;
     padding: 0;
+    width: 100%;
 
 }
+
 .fence__grid_item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
+
+.fence__grid_item-lent {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.fence__grid_item-blcok {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px
+}
+
 .fence__imgs {
     max-width: 50px;
     width: 100%;
 }
+
 .fence__img {
     max-width: 500px;
     width: 100%;
     box-shadow: 3px 3px 5px var(--fon-color);
 }
+
 .fence__complect {
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 40px;
-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
 
 }
+
 .fence__montage-img {
     max-width: 640px;
     width: 100%;
 }
+
 .fence__table {
     width: 100%;
     border-collapse: collapse;
     border: 1px solid var(--backlight-color);
-  
+
 }
 
-.table__title  {
+.table__title {
     padding: 10px;
     background: var(--backlight-color);
     border: 1px solid var(--fon-color);
 }
+
 .table__title th {
     padding: 10px;
     background: var(--backlight-color);
     border: 1px solid var(--fon-color);
 }
+
 .table-bordered td {
     border-right: 1px solid var(--backlight-color);
     vertical-align: middle;
     border-bottom: 1px solid var(--backlight-color);
     padding: 25px;
 }
+
 .fence__complect-plus {
     border: 1px solid var(--fon-color);
 }
+
 .fence_complect-plus_title {
     background-color: var(--fon-color);
     color: var(--grey-color);
@@ -87,76 +120,87 @@ width: 100%;
 }
 
 .fence__complect-btn {
-align-self: center;
-        background-color: var(--text-color);
-        cursor: pointer;
-        border: none;
-        padding: 17px 57px 17px 57px;
-        border-radius: 10px;
-        transition: transform 0.3s, filter 0.3s ease-in-out;
-        font-size: 24px;
-box-shadow: 0px 5px 5px var(--fon-color);
-max-width: 600px;
+    align-self: center;
+    background-color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    padding: 17px 57px 17px 57px;
+    border-radius: 10px;
+    transition: transform 0.3s, filter 0.3s ease-in-out;
+    font-size: 24px;
+    box-shadow: 0px 5px 5px var(--fon-color);
+    max-width: 600px;
 
 
 }
-.fence__complect-btn:hover{
+
+.fence__complect-btn:hover {
     transform: scale(1.1);
     filter: brightness(120%)
-  }
-  .fence__variants {
+}
+
+.fence__variants {
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-  }
-  .fence__variants-items {
+}
+
+.fence__variants-items {
     display: flex;
     flex-direction: column;
     max-width: 350px;
     width: 100%;
-  
-  }
-  .fence__variants-img {
+
+}
+
+.fence__variants-img {
     height: 300px;
     box-shadow: 3px 3px 5px var(--fon-color);
 
-  }
-  @media (max-width: 1109px) {
+}
+
+@media (max-width: 1109px) {
     .fence__variants {
         justify-content: center;
         align-items: center;
         gap: 30px;
     }
 }
-  @media (max-width: 936px) {
+
+@media (max-width: 936px) {
     .fence__block-describe {
         flex-direction: column;
         align-items: center;
     }
+
     .fence__subtitle {
         margin-top: 0;
     }
+
     .fence__text {
         margin-bottom: 0;
     }
-  }
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .fence__table {
         padding: 0 18px;
         font-size: 10px;
     }
-    th, td {
+
+    th,
+    td {
         padding: 4px !important;
     }
-  }
-  
-  @media (max-width: 480px) {
+}
+
+@media (max-width: 480px) {
     .fence__table {
         font-size: 8px;
     }
+
     .fence__advantage {
         grid-template-columns: repeat(1, minmax(0, 450px));
     }
-  }
-
+}
