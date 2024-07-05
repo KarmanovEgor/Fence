@@ -9,8 +9,8 @@ import Zabor from "../../img/zabor4-kar.jpeg";
 const slideImages = [
   {
     image: BarnaulZabor,
-    alt: "забор под ключ",
-    text: "Забор под ключ"
+    alt: "забор под ключ в г.Барнаул",
+    text: "Забор под ключ в г.Барнаул"
   },
   {
     image: ZaborZakaz,
