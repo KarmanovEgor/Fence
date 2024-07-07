@@ -53,12 +53,12 @@ export default function Wood({ openPopup }) {
           <h3 className="fence__montage-title title__size">{montageTitle}</h3>
           <div className="fence__montage-block">
             <p className="fence__montage-text">{montageText}</p>
-            <img
+            {/* <img
               src={montageImg}
               alt={altShema}
               title={altShema}
               className="fence__montage-img"
-            />
+            /> */}
           </div>
         </div>
         <FenceDetails fenceData={fenceData} openPopup={openPopup} />

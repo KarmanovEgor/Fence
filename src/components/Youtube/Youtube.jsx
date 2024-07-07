@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Youtube.css";
 
 export default function Youtube() {
@@ -13,12 +14,13 @@ export default function Youtube() {
             <li className="string"> Процесс установки забора от А до Я</li>
             <li className="string"> Отзывы наших клиентов</li>
             <li className="string">Результат работы, а главное ее качество</li>
+            <li className="string"><Link className="youtube__link" to="https://www.youtube.com/@ZABORYDOMA22" target="_blank" rel="noopener noreferrer">Ссылка на YouTube канал, нажми и посмотри </Link></li>
           </ul>
           <iframe
   className="youtube__block-video"
   width="560"
   height="315"
-  src="https://www.youtube.com/embed/JAlxPnMxJg8?si=kYt9Du-4iCstcbIk"
+  src="https://www.youtube.com/embed/krAPipcejC8?si=kHHz-OuTAH-qiDeD"
   id="our works"
   title="наши работы на youtube"
   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

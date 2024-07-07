@@ -10,6 +10,10 @@ justify-content: space-between;
 align-items: flex-start;
 
 }
+.youtube__link {
+    color: var(--grey-color);
+ 
+}
 
 @media (max-width: 630px) {
     .youtube__block {

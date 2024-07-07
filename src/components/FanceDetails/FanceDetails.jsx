@@ -17,7 +17,7 @@ const FenceDetails = ({ fenceData, openPopup }) => {
             <th>КОМПЛЕКТАЦИЯ</th>
             <th>ВЫСОТА</th>
             <th>КАРКАС</th>
-            <th>ПРОФНАСТИЛ RAL</th>
+            <th>СТОИМОСТЬ</th>
           </tr>
         </thead>
         <tbody>
